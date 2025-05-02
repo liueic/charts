@@ -1,0 +1,37 @@
+apiVersion: v1
+entries:
+  halo:
+  - annotations:
+      category: WebsiteBuilder, CMS, Blog
+    apiVersion: v2
+    appVersion: 2.19.0
+    created: "2025-05-02T11:59:44.551519232Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.x.x
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.x.x
+    description: A Helm chart to deploy Halo
+    digest: 8a46f7b9873db6ff33811b1c67eb2765334bb1ce8e418d8264df6592789b752b
+    home: https://www.halo.run
+    icon: https://www.halo.run/logo
+    maintainers:
+    - email: hi@halo.run
+      name: Halo Team
+    name: halo
+    sources:
+    - https://github.com/halo-sigs/charts
+    - https://github.com/halo-dev/halo
+    urls:
+    - https://github.com/liueic/charts/releases/download/halo-1.2.3/halo-1.2.3.tgz
+    version: 1.2.3
+generated: "2025-05-02T11:59:44.551529241Z"
